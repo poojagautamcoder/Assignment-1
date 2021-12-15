@@ -1,0 +1,28 @@
+.section-2 {
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+}
+.Heading {
+  display: flex;
+  margin: 0 5rem 0 5rem;
+}
+.Heading1 {
+  font-size: 40px;
+  font-weight: 450;
+  padding-left: 1rem;
+}
+.Heading2 {
+  font-size: 30px;
+  font-weight: 50;
+  margin: auto 1rem auto 1rem;
+  padding-top: 10px;
+  color: #292b2c;
+}
+
+@media only screen and (max-width: 720px) {
+  .Heading {
+    display: flex;
+    margin: 0;
+  }
+}
