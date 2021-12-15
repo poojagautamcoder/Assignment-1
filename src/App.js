@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Layout from './Components/Project/Layout';
+import Navbar from './Components/Navbar/Navbar';
+import Heading from './Components/Heading';
+import Footer from './Footer/Footer';
 function App() {
+  const data = [0,1,2,3,4,5,6,7,8]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Navbar/>
+      <Heading/>
+      <div className="card-parent">
+      <div className="Cards">
+      {data.map((cards,index) =>{
+        return <Layout key={index}/>
+
+      })}
+      </div>
+     
+      </div>
+      
+      <Footer/>
+      
     </div>
   );
 }
