@@ -1,35 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-import Layout from './Components/Project/Layout';
-import Navbar from './Components/Navbar/Navbar';
-import Heading from './Components/Heading';
-import Footer from './Footer/Footer';
+import logo from "./logo.svg";
+import "./App.css";
+import Layout from "./Components/Project/Layout";
+import Navbar from "./Components/Navbar/Navbar";
+import Heading from "./Components/Heading";
+import Footer from "./Footer/Footer";
 const App = () => {
-  const data = [0,1,2,3,4,5,6,7,8]
+  const data = [0, 1, 2, 3, 4, 5, 6, 7, 8];
   return (
     <div className="App">
-      
-      <Navbar/>
-      <Heading/>
+      <Navbar />
+      <Heading />
       <div className="card-parent">
-      <div className="Cards">
-      {data.map((cards,index) =>{
-        return (
-
-          <div key={index}>
-            <Layout/>
-          </div>
-        )
-
-      })}
+        <div className="Cards">
+          {data.map((cards, index) => {
+            return (
+              <div key={index}>
+                <Layout />
+              </div>
+            );
+          })}
+        </div>
       </div>
-     
-      </div>
-      
-      <Footer/>
-      
+      <Footer />
     </div>
   );
-}
-
+};
 export default App;
